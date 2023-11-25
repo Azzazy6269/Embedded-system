@@ -3,32 +3,9 @@
 
 int main()
 {
-    int A,B,C,Min,Max;
-    scanf("%d%d%d",&A,&B,&C);
-    if(A>B&&A>C){
-        Max=A;
-    }
-    else if(B>A&&B>C){
-        Max=B;
-    }
-    else if(C>A&&C>B){
-        Max=C;
-    }
-    else{
-        Max=0;
-    }
-    if(A<B&&A<C){
-        Min=A;
-    }
-    else if(B<A&&B<C){
-        Min=B;
-    }
-    else if (C<A&&C<B){
-        Min=C;
-    }
-    else{
-        Min=0;
-    }
-    printf("Min=%d\nMax=%d",Min,Max);
+    int A,B,C,D,X;
+    scanf("%d%d%d%d",&A,&B,&C,&D);
+    X=(A*B)-(C*D);
+    printf("%d\n",X);
     return 0;
 }
